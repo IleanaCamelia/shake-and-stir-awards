@@ -1,0 +1,374 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #f8f8f8;
+  }
+  
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    padding: 0.9rem 1.9rem;
+  }
+  
+  nav .logo img {
+    height: 4rem;
+  }
+
+  .navigation a {
+    color: #f8f8f8;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: 500;
+  }
+  
+  .navigation a:hover {
+    text-decoration: underline;
+  }
+  
+  .hero {
+    background: url('./Media/Exotic_Medley.jpg') center/cover no-repeat;
+    text-align: center;
+    color:#222;
+    padding: 6.25rem 1.25rem;
+    position: relative;
+  }
+  
+  .hero h1 {
+    font-weight: 900;
+    text-shadow: 0.125rem 0.1rem 0.25rem #0000004D; 
+  }
+  .hero p {
+    font-weight: 700;
+    text-shadow: 0.06rem 0.7rem 0.2rem #00000033;
+  }
+  
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; width:100%; height: 100%;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.7rem;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 1;
+  }
+  .hero p {
+    max-width: 38rem;
+    margin: 0 auto 1.25rem;
+  }
+
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 1.8em;
+    }
+    .grid {
+      flex-direction: column;
+    }
+  }
+  
+  #register-toggle:checked + .register-form {
+    display: flex;
+  }
+  
+  .register-button:focus,
+.btn:focus {
+  outline: 0.2rem solid #e44d26;
+}
+
+  .register-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: #e44d26;
+    color: #f8f8f8;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 0.3rem;
+  }
+
+  .register-button:hover {
+    background: #c63f1a;
+  }
+
+.register-form {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-form form {
+  background-color: #f8f8f8;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.5rem #000;
+  max-width: 25rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="tel"] {
+  width: 100%;
+  padding: 0.6rem;
+  margin: 0.6rem 0;
+  border-radius: 0.3rem;
+  border: 0.06rem solid #ccc;
+}
+
+.register-form .btn {
+  background-color: #4CAF50;
+  color: #f8f8f8;
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+.register-form .btn:hover {
+  background-color: #45a049;
+}
+
+.register-form .cancel {
+  background-color: #f44336;
+  cursor: pointer;
+}
+
+.register-form .cancel:hover {
+  background-color: #d32f2f;
+}
+
+#register-toggle:checked + .register-form {
+  display: flex;
+}
+
+  .intro-text {
+    font-size: 1em;
+    font-weight: 400;
+    color: #444;
+    max-width: 50rem;
+    margin: 0 auto 1.25rem;
+    text-align: center;
+  }
+  
+  /* Sections */
+
+
+#section-1 .intro-text {
+  max-width: 41rem; 
+  margin: 0 auto 1.9rem auto; 
+  padding: 0.9rem 1.5rem; 
+  text-align: center; 
+  font-size: 1.1em; 
+  line-height: 1.3; 
+  color: #f8f8f8; 
+  background: #111; 
+  border-radius: 0.6rem; 
+}
+
+
+  #section-1 p {
+    background: linear-gradient(90deg, (#1b1b1b));
+    padding: 0.9rem;
+    border-radius: 0.6rem;
+  }
+  
+  
+  #section-1 {
+    background: linear-gradient(to right, #8e44ad, #00FFFF, #8e44ad);
+    color: white;
+  }
+  
+  #section-2 {
+    background: linear-gradient(to bottom, #8e44ad, #9966CC, #483D8B);
+    color: white;
+  }
+  #section-3 {
+    background: #1b1b1b;
+    color: #f8f8f8;
+  }
+  footer {
+    background: #111;
+    color: #f8f8f8;
+  }
+    
+  .section-block {
+    padding: 3.8rem 1.25rem;
+    text-align: center;
+  }
+  
+  .section-block h2 {
+    font-size: 2em;
+    margin-bottom: 1.25rem;
+  }
+  
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.25rem;
+  }
+  
+  .grid-box {
+    background: #222;
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.1rem 0.6rem #0000001A;
+    max-width: 19rem;
+    text-align: center;
+  }
+  
+  .grid-box img {
+    max-width: 100%;
+    border-radius: 0.5rem;
+    margin-top: 0.6rem;
+  }
+  #section-2 .grid-box img {
+    width: 100%;
+    height: auto; 
+    margin-top: 0.6rem;
+    border-radius: 0.6rem; 
+  }
+  
+  @media (max-width: 768px) {
+    .grid-box {
+      width: 100%; 
+      margin-bottom: 1.25rem;
+    }
+  }
+  
+ 
+  footer {
+    background: #222;
+    color: #f8f8f8;
+    text-align: center;
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+  }
+
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.25rem;
+}
+
+th, td {
+  padding: 0.6rem;
+  text-align: left;
+  border-bottom: 0.06rem solid #ddd;
+}
+
+th {
+  background-color: #333;
+  color: #f8f8f8;
+  font-size: 1.2em;
+}
+
+td {
+  background-color: #222;
+  color: #f8f8f8;
+}
+
+tr:hover {
+  background-color: #555;
+}
+
+h3 {
+  font-size: 1.8em;
+  margin-bottom: 1.25rem;
+  color: #f8f8f8;
+}
+
+
+.social-links a {
+  color: #f8f8f8;
+  text-decoration: none;
+  font-size: 1.2em;
+  margin: 0 0.6rem;
+}
+
+.social-links a:hover {
+  color: #e44d26; 
+}
+
+.social-links i {
+  margin-right: 0.5rem; 
+}
+@media (max-width:767px) {
+  .box-half { width:calc(100% - 5rem); }
+  .box-third { width:calc(50% - 5rem);}
+  .box-quarter { width:calc(33.33% - 5rem); }
+}
+
+@media (max-width:480px) {
+  .box-half { width:calc(100% - 5rem); }
+  .box-third { width:calc(100% - 5rem);}
+  .box-quarter { width:calc(33.33% - 5rem); }
+}
+.grid-box img {
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer; 
+}
+
+.grid-box img:hover {
+  transform: scale(1.1); 
+}
+@media (max-width: 768px) {
+  .hero {
+    padding: 4rem 1.25rem; 
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 1.8rem; 
+  }
+  .grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+  }
+  .grid-box {
+    width: 100%; 
+    margin-bottom: 1.25rem; 
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+  .grid {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .section-block {
+    padding: 2rem 1.25rem; 
+    text-align: center;
+  }
+  .grid-box {
+    width: 100%; 
+    margin-bottom: 1rem; 
+  }
+}

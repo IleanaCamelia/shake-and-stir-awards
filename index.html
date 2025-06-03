@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exquisite Cocktails</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+      />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a class="logo" href="#">
+          <img src="./Media/logo.webp" alt="Shake & Stir Awards Logo" />
+        </a>
+        <div class="navigation">
+          <a href="#section-1">Signature Creations</a>
+          <a href="#section-2">Cocktail Categories</a>
+          <a href="#section-3">Judges & Testimonials</a>
+          <a href="#about">Contact & About</a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to Shake & Stir Awards!</h1>
+        <p>
+          A celebration of creativity, craftsmanship, and the art of mixology!
+          This prestigious event unites aspiring bartenders and seasoned
+          cocktail enthusiasts for an exhilarating competition blending
+          innovation with classic techniques.
+        </p>
+        <p class="hero-intro">
+          "Find the perfect mix! Dive into a world of innovation with our bespoke cocktail creations. Discover your new favorite drink and savor the essence of originality!"
+        </p>
+        <p>
+          Join us for an exciting 10-day event in June 2025 at XHAMAN, Palma de
+          Mallorca, by the sea.
+        </p>
+
+      
+<label for="register-toggle" class="register-button">Register Now</label>
+<input type="checkbox" id="register-toggle" class="register-toggle" />
+<div class="register-form">
+  <form action="/submit_registration" method="POST">
+    <h2>Sign Up</h2>
+    
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter your name" name="name" required>
+
+    <label for="email"><b>Email</b></label>
+    <input type="email" placeholder="Enter your email" name="email" required>
+
+    <label for="phone"><b>Phone Number</b></label>
+    <input type="tel" placeholder="Enter your phone number" name="phone" required>
+
+    <button type="submit" class="btn">Submit</button>
+    <button type="button" class="btn cancel" onclick="document.getElementById('register-toggle').checked = false;">Close</button>
+
+  </form>
+</div>
+
+      </div>
+    </section>
+
+    <section id="section-1" class="section-block">
+      <h2>Signature Creations</h2>
+        <p class="intro-text">
+          Find the perfect mix! Dive into a world of innovation with our bespoke cocktail creations. 
+          Each drink has been carefully crafted to inspire, surprise, and delight, blending unique ingredients with bold ideas. 
+          From vibrant flavors to captivating presentations, these signature cocktails are a testament to the artistry and imagination of mixology. 
+          Discover your new favorite creation and savor the essence of originality in every sip.
+        </p>
+      <div class="grid clearfix">
+
+        <div class="grid-box box-third">
+          <h3>Ruby Chill</h3>
+          <p>Vodka, raspberry liqueur, agave syrup, fresh raspberries, Angostura bitters, ginger beer.</p>
+          <img src="./Media/Ruby_Chill.jpg" alt="Ruby Chill Cocktail"/>
+      </div>
+        
+          
+        <div class="grid-box box-third">
+            <h3>Color Trilogy</h3>
+            <p>30 ml grenadine, 40 ml orange juice or mango-orange mix, 30 ml coffee liqueur, 20 ml Jägermeister.</p>
+            <img src="./Media/Color_Trilogy.jpg" alt="Color Trilogy Cocktail"/>
+        </div>
+
+
+        <div class="grid-box box-third">
+          <h3>Spring Reverie</h3>
+          <p>50 ml floral gin ,20 ml elderflower liqueur,15 ml freshly squeezednlime juice.</p>
+          <img src="./Media/Spring_Reverie.jpg" alt="Spring Reverie Cocktail" />
+        </div>
+
+
+        <div class="grid-box box-third">
+          <h3>Roses Street</h3>
+          <p> 50 ml gin, 20 ml rose syrup, 20 ml fresh lemon juice, 2 dashes of rose water.</p>
+          <img src="./Media/Roses_Street.jpg" alt="Roses Street Cocktail"/>
+        </div>
+
+        <div class="grid-box box-third">
+            <h3>Velvet Sunset Cocktail</h3>
+            <p> 40 ml dark rum , 30 ml mango juice, 20 ml strawberry purée, 10 ml maple syrup.</p>
+            <img src="./Media/Velvet Sunset.jpg" alt="Velvet Sunset Cocktail" />
+        </div>
+            
+        <div class="grid-box box-third">
+          <h3>The Shaker’s Spirit</h3>
+           <p>50 ml gin, 15 ml rose syrup,	20 ml fresh lime juice, soda water, Edible gold dust. </p>
+            <img src="./Media/The Shaker’s Spirit.jpg" alt="The Shaker’s Spirit Cocktail" />
+         </div>
+      
+        <div class="grid-box box-third">
+          <h3>Amethyst Dream </h3>
+           <p>Gin, rose syrup, fresh lime juice, soda water, edible gold dust/flowers.</p>
+           <img src="./Media/Amethyst_Dream .jpg" alt="Amethyst Dream  Cocktail"/>
+         </div>
+   
+        <div class="grid-box box-third">
+          <h3>Stirred Elegance</h3>
+          <p>Vodka, raspberry liqueur, fresh raspberries, Angostura bitters.</p>
+          <img src="./Media/Stirred Elegance.webp"  alt="Stirred Elegance Cocktail"/>
+        </div>
+
+         <div class="grid-box box-third">
+          <h3>Golden Hour Fizz</h3>
+          <p>40 ml Prosecco, 15 ml honey liqueur, 20 ml fresh lemon juice, 10 ml ginger syrup.</p>
+          <img src="./Media/Golden Hour Fizz1.jpeg" alt="Golden Hour Fizz Cocktail" />
+    </div>
+ 
+
+    <div class="grid-box box-third">
+      <h3>Crimson Reverie </h3>
+      <p>50 ml bourbon, 10 ml maraschino liqueur, 1 sugar cube, 2 dashes Angostura bitters, 1 dash orange bitters</p>
+      <img src="./Media/Crimson_Reverie.png" alt="Crimson Reverie  Cocktail"/>
+    </div>
+
+    <div class="grid-box box-third">
+      <h3>Citrus Symphony</h3>
+      <p>Tequila, grapefruit juice, orange juice, lime juice, honey syrup, chili flakes.</p>
+      <img src="./Media/Cytrus_Simphony.png" alt="Citrus Symphony Cocktail"/>
+    </div>
+      
+    <div class="grid-box box-third">
+        <h3>Volcano Kiss</h3>
+        <p> 1 oz Orange Juice, 1 oz Pineapple Juice, 1 oz Grenadine Syrup. </p>
+        <img  src="./Media/Volcano_Kiss.jpg" alt="Volcano Kiss Cocktail"/>
+    </div>
+  </section>
+       
+
+
+       
+
+    <section id="section-2" class="section-block bej">
+      <h2>Cocktail Categories</h2>
+      <div class="grid clearfix">
+        <div class="grid-box box-third">
+          <h3>Around the World</h3>
+          <p>
+            Explore iconic cocktails from different cultures, like Margaritas
+            from Mexico and Negronis from Italy.
+          </p>
+          <img
+            src="./Media/Spectrum_of_Sips.jpg"
+            alt="Around the World Cocktails"
+          />
+        </div>
+        <div class="grid-box box-third">
+          <h3>Seasonal Delights</h3>
+          <p>
+            Winter favorites: Hot Toddy, Mulled Wine. Summer favorites: Aperol
+            Spritz, Piña Colada.
+          </p>
+          <img
+            src="./Media/Tropical_Symphony.jpg"
+            alt="Seasonal Delights Cocktails"
+          />
+        </div>
+        <div class="grid-box box-third">
+          <h3>Classics with a Twist</h3>
+          <p>
+            Modern takes on classic cocktails, like the Smoky Old Fashioned and
+            Spicy Margarita.
+          </p>
+          <img
+            src="./Media/The_Cpcktail_Parade.jpg"
+            alt="Classics with a Twist Cocktails"
+          />
+      </div>
+    </section>
+
+    <section id="section-3" class="section-block dark">
+      <h2>Judges & Testimonials</h2>
+      <div class="grid clearfix">
+        <div class="grid-box box-half rec-section-box">
+          <img src="./Media/Olivia Harper.jpg" alt="Olivia Harper" />
+          <div>
+            <h3>Olivia Harper</h3>
+            <p>
+              An award-winning bartender known for her experimental and creative
+              cocktails.
+            </p>
+          </div>
+        </div>
+        <div class="grid-box box-half rec-section-box">
+          <img src="./Media/Charlotte_Hayes.jpg" alt="Charlotte Hayes" />
+          <div>
+            <h3>Charlotte Hayes</h3>
+            <p>
+              A fine dining expert and sommelier with a keen eye for balance and
+              elegance.
+            </p>
+          </div>
+        </div>
+        <div class="grid-box box-half rec-section-box">
+          <img src="./Media/Mystery_guest.jpg" alt="Emily Dawson" />
+          <div>
+            <h3>Mystery guest</h3>
+            <p>
+              An expert in mixology with global experience in diverse drinking
+              cultures.
+            </p>
+      </div>
+        </div>
+    </section>
+
+    <footer>
+      <section id="about" class="section-block purple">
+        <h2>Shake & Stir Awards 2025</h2>
+        <p>
+          The Shake & Stir Awards is a celebration of the finest in mixology, creativity, and craftsmanship. This prestigious event brings together talented bartenders and cocktail enthusiasts from around the world for a thrilling competition that blends innovative techniques with timeless classics.
+        </p>
+            <p>
+              The Shake & Stir Awards will span over 10 exciting days in June, where competitors will have the chance to showcase their creativity and mixology skills. The event will take place at XHAMAN, Palma de Mallorca, with competitors presenting their signature cocktails after dinner each evening. The jury will then evaluate and give their verdict on each performance.
+            </p>
+            <h3>Daily Schedule</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Time</th>
+                  <th>Event</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>7:00 PM</td>
+                  <td>Competition begins - Competitors present their signature cocktails</td>
+                </tr>
+                <tr>
+                  <td>9:00 PM</td>
+                  <td>Dinner break</td>
+                </tr>
+                <tr>
+                  <td>10:00 PM</td>
+                  <td>Judging begins - Jury evaluates competitors' cocktails</td>
+                </tr>
+                <tr>
+                  <td>11:30 PM</td>
+                  <td>Final verdicts announced</td>
+                </tr>
+                <tr>
+                  <td>12:00 AM</td>
+                  <td>Event ends for the day</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>Details for each competition day and category will be updated soon.</p>
+        
+        <p>
+          Join us for 10 exciting days in June 2025 at XHAMAN, Palma de Mallorca, by the sea. It's a unique opportunity to explore the most inventive cocktails, experience unforgettable presentations, and learn from the best in the industry.
+        </p>
+        <p>&copy; 2025 Shake & Stir Awards. All rights reserved.</p>
+      </section>
+      
+    
+      <div class="social-links">
+        <a href="#" target="_blank">
+          <i class="fab fa-facebook"></i> Facebook
+        </a> |
+        <a href="#" target="_blank">
+          <i class="fab fa-instagram"></i> Instagram
+        </a> |
+        <a href="#" target="_blank">
+          <i class="fab fa-twitter"></i> Twitter
+        </a>
+      </div>
+    </footer>
+    
+  </body>
+</html>
