@@ -38,6 +38,13 @@ A celebration of creativity, craftsmanship, and the art of mixology. This vibran
 
 ---
 
-## 🗂️ Project Structure
+---
+
+## 👩‍💼 Author  
+**Ileana Camelia Cilioaica**  
+Mallorca, Spain  
+[cilioaica.camelia@gmail.com](mailto:cilioaica.camelia@gmail.com)
+
+--
 
 
